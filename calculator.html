@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="header">Technology</h1>
+    <a href="index.html" class="btn btn-primary">clickhere</a> 
+    <p id="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugiat possimus saepe at! Dolor esse ullam neque voluptatem delectus corrupti repellat magnam sapiente perspiciatis iste, ex, saepe, doloribus eligendi at.</p>
+
+    <input type="number" id="box1" required placeholder="number">
+    <input type="number" id="box2" required placeholder="number">
+    <input type="number" id="answer" readonly placeholder="answer">
+    <button onclick="add()">add</button>
+<button onclick="alert('your message comes here')">clickme</button>
+
+
+
+    <script>
+        document.getElementById("header").innerHTML=8081261526 
+        document.getElementById("footer").innerText="Stay focused get strong!"
+        document.getElementById("header").style.color="blue"
+
+        function addnumber(firstnumber, secondnumber){
+            return firstnumber-secondnumber
+        }
+        document.write(addnumber(22,2))
+
+        function add(){
+            var box1=document.getElementById("box1").value
+            var box2=document.getElementById("box2").value
+            var sum=Number(box1)+Number(box2)
+            document.getElementById("answer").value=sum
+        }
+    </script>
+
+</body>
+</html>
